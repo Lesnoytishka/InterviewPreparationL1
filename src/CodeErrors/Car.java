@@ -8,12 +8,12 @@ package CodeErrors;
 
 
 public abstract class Car {
-    public Engine engine;
+    private Engine engine; // Класс Engine где-то существует
     private String color;
     private String name;
 
 
-    protected void start(){
+    public void start(){
         System.out.println("Car starting");
     }
 
@@ -42,6 +42,4 @@ public abstract class Car {
     public void setName(String name) {
         this.name = name;
     }
-}
-
 }
