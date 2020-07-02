@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="lenoytishka.entity">
+
+    <class name="Student" table="student_tbl">
+        <id name="id" type="long" column="id" >
+            <generator class="identity" />
+        </id>
+
+        <property name="name" >
+            <column name="name" />
+        </property>
+
+        <property name="mark" >
+            <column name="mark" />
+        </property>
+    </class>
+
+</hibernate-mapping>
+
